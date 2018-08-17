@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Remote RGB Controller</string>
+    <string name="master_switch">Power</string>
+    <string name="progress_red">RED</string>
+    <string name="progress_green">GREEN</string>
+    <string name="progress_blue">BLUE</string>
+    <string name="string_sharp">#</string>
+    <string name="btn_send">Send!</string>
+    <string name="btn_get_bluetooth_permission">Get Bluetooth Permission</string>
+    <string name="btn_search_devices">Select Device</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_layout_padding">8dp</dimen>
+    <dimen name="layout_rgb_value_minWidth">35dp</dimen>
+    <dimen name="layout_border">1dp</dimen>
+</resources>

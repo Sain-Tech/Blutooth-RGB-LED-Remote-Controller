@@ -1,0 +1,3 @@
+include ':app', ':demo', ':library'
+project(':demo').projectDir = new File('3rdlib/ColorPicker/ambilwarna-master/demo')
+project(':library').projectDir = new File('3rdlib/ColorPicker/ambilwarna-master/library')

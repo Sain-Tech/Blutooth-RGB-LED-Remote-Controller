@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="@bool/android_bool_true"
+    android:orientation="vertical"
+    android:padding="@dimen/main_layout_padding">
+
+    <Switch
+        android:id="@+id/masterSW"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/master_switch" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/main_layout_padding"
+                    android:paddingTop="@dimen/main_layout_padding"
+                    android:text="@string/progress_red" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/main_layout_padding"
+                    android:paddingTop="@dimen/main_layout_padding"
+                    android:text="@string/progress_green" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/main_layout_padding"
+                    android:paddingTop="@dimen/main_layout_padding"
+                    android:text="@string/progress_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:id="@+id/ctr_R"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="@integer/color_max_value"
+                    android:paddingBottom="@dimen/main_layout_padding"
+                    android:paddingTop="@dimen/main_layout_padding" />
+
+                <SeekBar
+                    android:id="@+id/ctr_G"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="@integer/color_max_value"
+                    android:paddingBottom="@dimen/main_layout_padding"
+                    android:paddingTop="@dimen/main_layout_padding" />
+
+                <SeekBar
+                    android:id="@+id/ctr_B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="@integer/color_max_value"
+                    android:paddingBottom="@dimen/main_layout_padding"
+                    android:paddingTop="@dimen/main_layout_padding" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minWidth="@dimen/layout_rgb_value_minWidth"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/valueOfRed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/main_layout_padding"
+                    android:paddingTop="@dimen/main_layout_padding" />
+
+                <TextView
+                    android:id="@+id/valueOfGreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/main_layout_padding"
+                    android:paddingTop="@dimen/main_layout_padding" />
+
+                <TextView
+                    android:id="@+id/valueOfBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/main_layout_padding"
+                    android:paddingTop="@dimen/main_layout_padding" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_border">
+
+                <FrameLayout
+                    android:id="@+id/colorViewer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border">
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/string_sharp" />
+
+        <EditText
+            android:id="@+id/inputColorCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:focusableInTouchMode="@bool/android_bool_true"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_send" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBTPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_get_bluetooth_permission" />
+
+    <Button
+        android:id="@+id/btnSelectDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_search_devices" />
+
+</LinearLayout>
